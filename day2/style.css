@@ -1,0 +1,17 @@
+h1 {
+    background-color: aqua;
+    color: black;
+}
+.clickme {
+    color: blue;
+    cursor: pointer;
+    border-radius: 8px;
+
+}
+.name {
+    background-color: red;
+}
+.clickme:hover {
+    background-color: brown;
+    color: black;
+}
