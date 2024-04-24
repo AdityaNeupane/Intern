@@ -1,0 +1,25 @@
+ .outer {
+    background-color: deepskyblue;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+ }
+ .inner{
+    background-color: white;
+    margin: 0% auto;
+    padding: 0% auto;
+    
+ }
+ .login{
+    background-color: deepskyblue;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 7px;
+    width: 150px;
+
+ }
+ h2 {
+    color: deepskyblue;
+ }
