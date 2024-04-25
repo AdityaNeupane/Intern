@@ -1,0 +1,43 @@
+.main {
+    height: 300px;
+    width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 0px;
+    padding: 20px;
+}
+.one {
+    /* height: 200px;
+    width: 100px; */
+    border: 3px solid blue;
+   
+
+}
+.two {
+    /* height: 200px;
+    width: 200px; */
+    border: 3px solid blue;
+     
+}
+.three {
+    /* height: 200px;
+    width: 100px; */
+    border: 3px solid blue;
+}
+h1 {
+    /* height: 50px;
+    width: 40px; */
+    color: white;
+    background-color: blue;
+    margin-left: 30px;
+    text-align: center;
+     margin-right: 30px; 
+     margin-bottom: 200px;
+}
+ h5{
+    text-align: center;
+ }
+ .two h1 {
+    margin-left: 92px;
+    margin-right: 92px;
+ }
