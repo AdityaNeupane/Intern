@@ -1,0 +1,119 @@
+.header {
+    background-color: #023e8a;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact {
+    color: white;
+    font-weight: 800px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+   
+}
+.icon {
+color: white;
+ padding-right: 10px;
+font-size: 30px;
+
+}
+
+/* next div  */
+
+.logo-bar {
+    height: 90px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+}
+.info {
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+
+}
+.logo {
+    background-image: url(logo.png);
+    width: 63px;
+    height: 66px;
+    background-size: cover;
+    /* padding-left: 10px; */
+    margin-left: 30px;
+    background-repeat: no-repeat;
+    
+}
+.button {
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 160px;
+    font-size: 1rem;
+    font-weight: 900px;
+}
+.button:hover {
+    background-color: #023e8a;
+}
+
+/* image  */
+
+.image {
+    background-image: url(manavsewa.jpg);
+    height: 600px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+} 
+
+/* next div  */
+
+.photo{
+    background-image: url(oldhand.jpg);
+    width: 550px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 10px; */
+    /* margin-left: 0px; */
+    margin-right: 100px;
+}
+.aboutus {
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.para {
+    width: 500px;
+    height: 350px;
+  margin-right: 80px;
+}
+.para h2{
+    
+    color: #023e8a;
+}
+.para h2{
+    font-weight: 100px;
+}
+.para p{
+font-size: 1.2rem;
+}
+.tutton {
+    background-color:orangered;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    width: 140px;
+    color: white;
+    height: 50px;
+}
+.tutton:hover {
+    background-color: #ffffff;
+    color: orangered;
+    border: 1.5px solid orangered;
+}
