@@ -1,0 +1,38 @@
+ .main {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+ }
+
+ .box1 {
+    background-color: red;
+     
+ }
+
+ .box2 {
+    background-color: aqua;
+    
+ }
+
+ .box3 {
+    background-color: brown;
+           
+ }
+
+
+/* tablet view  */
+
+ @media screen  and (max-width: 768px) {
+   .main{
+    grid-template-columns: 1fr 1fr  ; 
+   }
+} 
+
+@media screen and (max-width: 480px) {
+    .main{
+        grid-template-columns: 1fr;
+    }
+}
+
+ 

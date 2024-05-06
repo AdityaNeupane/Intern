@@ -195,7 +195,7 @@ font-weight: 800px;
 position: absolute;
 gap: 30px;
 z-index: 100;
- top: 42%;
+ top: 20%;
 margin-left: 10%;
 margin-right: 10%;
 /* margin-bottom: 10px; */
@@ -271,4 +271,232 @@ margin-top: 25px;
 .helpbox i:hover {
 background-color: beige;
 color: #1a76d1;
+}
+
+/* subbanner with background image  */
+
+.subbanner {
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 130px;
+    padding-bottom: 130px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+margin-top: 90px;
+height: 100px;
+}
+ 
+.subbanner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1; 
+    background-color: #1a76d1;
+    z-index: -1;
+
+}.subbanner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../day6/background-image.jpg');
+    opacity: 0.2; 
+    z-index: -1;
+    overflow: hidden;
+}
+ 
+
+.sub{
+    display: flex;
+    align-items: center;
+}
+.sub i{
+    border-color:beige;
+    border-style: solid;
+    border-width: 2px;
+    font-size: 30px;
+    text-align: center;
+    align-content: center;
+    width:100px;
+    height: 100px;
+    color: beige;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.sub i:hover{
+    background-color: beige;
+    color: #1a76d1;
+}
+.sub h1{
+    font-size: 2rem;
+    color: beige;
+}
+.sub p{
+    font-size: 1.1rem;
+    color: beige;
+}
+
+/* arko help section  */
+
+.service {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.service img {
+padding: 20px;
+width: 80px;
+}
+
+.service p {
+    font-size: 1rem;
+}
+
+/* about us section  */
+
+.aboutus{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 70px;
+}
+ 
+/* left wala div  */
+.mathi hr{
+    width:60px;
+    height: 3px;
+    border: none;
+    background-color: #1a76d1;
+}
+
+.mathi p{
+    font-size: 1rem;
+   margin-top: 20px;
+}
+
+.listcontents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+
+}
+
+.list{
+    align-content: center;
+    text-align: center;
+    display: inline;
+}
+
+.lists ul{
+    list-style: none;
+    font-size: 1rem;
+}
+
+.lists ul li i{
+    color: beige;
+    background-color: #1a76d1;
+    padding: 6px;
+    margin: 10px;
+    margin-left: 0px;
+    border-radius: 50%;
+    font-size: 8px;
+}
+
+/* aba right wala div  */
+.right-aboutus {
+    width: 710px; 
+    height: 400px; 
+   
+}
+
+.right-aboutus img {
+    width: 100%;
+    height: auto; 
+}
+
+/* emergency wala section  */
+
+  .emergency{
+    position: relative;
+    text-align: center;
+    padding: 100px;
+    color: beige;
+    height: 200px;
+   
+}
+.emergency::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../day6/background-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+}
+.emergency::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: #1a76d1;
+    z-index: -1;
+}
+ 
+ 
+.guff button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: larger;
+    border-radius: 5px;
+    margin-top: 20px;   
+}
+.yo{
+    border: none;
+    color: #1a76d1;
+    width: 150px;
+    height: 50px;
+}
+.yo:hover{
+    background-color:darkblue;
+    color: beige;
+}
+.tyo i{
+    padding-left: 10px;
+}
+.tyo{
+    background-color: transparent;
+    color: beige;
+    border-color: beige;
+    border-style: solid;
+    margin-left: 20px;
+    width: 170px;
+    height: 50px;
+}
+.tyo:hover{
+    background-color: beige;
+    color: beige;
+    
+}
+.guff p{
+    font-size: 22px;
+}
+.guff h1{
+    font-size: 2.2rem;
 }
