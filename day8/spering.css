@@ -85,10 +85,10 @@ margin-top: 10px;
 }
 
 .rightdiv {
-    background-color: #1CBBB4;
+    background-color: #e9ecef;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: #00253e;
+    box-shadow: 10px 5px 5px #00253e;
 }  
 
 /* arko div hai  */
@@ -385,9 +385,163 @@ color: #00253e;
 
 /* footer  */
 
-.footer {
+.final-div {
     background-color: #00253e;
-    height: 500px;
+    height: 600px;
     width: 100%;
     margin-top: 120px;
+}
+
+/* final div ko bhitra top wala div  */
+.top{
+    display: flex;
+    gap: 830px;
+    padding-top: 50px;
+}
+.top-left {
+    height: 50px;
+    display: flex;
+    color: beige;
+    padding-left: 30px;
+   
+}
+
+.top-left h2{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 1.9rem;
+}
+
+ 
+.top-right {
+    color: beige;
+    font-size: xx-large;
+    margin-top: 10px;
+    /* justify-content: space-evenly; */
+    display: flex;
+    gap: 25px;
+    
+}
+
+/* final div bhitra mid wala div  */
+
+.mid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 100px;
+    padding-left: 50px;
+    
+}
+
+.useful h3{
+    color: beige;
+     font-size: 1.4rem;
+     font-weight: bold;   
+}
+
+.useful p{
+    color: beige;
+     
+}
+
+.offices h3{
+    color: beige;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.offices p{
+color: beige;
+}
+
+.information h3{
+    color: beige;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.information p{
+    color: beige;
+}
+
+.newsletter h3{
+    color: beige;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.email-input {
+    box-sizing: border-box;
+    width: 250px;
+    height: 38px;
+}
+
+.subs {
+    width: 150px;
+    height: 38px;
+    color: beige;
+    background-color: #ef233c;
+    border-radius: 5px;
+    border: 1px solid beige;
+    font-size: 1rem;
+}
+
+.subs:hover {
+    background-color: #00253e;
+    color: #ef233c;
+    border: 1px solid #ef233c;
+}
+
+/* final div bhitra lower div  */
+
+.lower {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 130px;
+    margin-left: 120px;
+}
+
+.location {
+display: flex;
+color: beige;
+font-size: 1.2rem;
+}
+
+.mail {
+display: flex;
+color: beige;
+font-size: 1.2rem;
+}
+
+.phone {
+display: flex;
+color: beige;
+font-size: 1.2rem;
+}
+
+.fa-location-dot {
+    font-size: 1.6rem;
+}
+
+.fa-envelope {
+    font-size: 1.6rem;
+}
+
+.fa-phone-volume {
+    font-size: 1.6rem;
+}
+
+.lower p{
+    margin-left: 20px;
+}
+
+
+/* aba chai ekdam last wala footer  */
+
+.copyright {
+font-size: 1rem;
+font-weight: bold;
+height: 50px;
+ 
+align-items: center;
+text-align: center;
+padding-top: 30px;
 }
