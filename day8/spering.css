@@ -45,7 +45,7 @@ margin-top: 10px;
 }
 
 .btn1 {
-    background-color: red;
+    background-color: #ef233c;
     color: beige;
     padding: 10px;
     width: 170px;
@@ -60,9 +60,9 @@ margin-top: 10px;
 
 .btn1:hover {
     background-color: black;
-    color: red;
+    color: #ef233c;
     border-radius: 7px;
-    border: 1px solid red;
+    border: 1px solid #ef233c;
 }
 
 .btn2 {
@@ -85,9 +85,10 @@ margin-top: 10px;
 }
 
 .rightdiv {
-    background-color: aliceblue;
+    background-color: #1CBBB4;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: #00253e;
 }  
 
 /* arko div hai  */
@@ -124,7 +125,7 @@ margin-top: 10px;
 }
 
 .one {
-    background-color: red;
+    background-color: #ef233c;
     color: beige;
     padding: 10px;
     width: 170px;
@@ -136,8 +137,8 @@ margin-top: 10px;
 
 .one:hover {
     background-color: beige;
-    color: red;
-    border: 1px solid red;
+    color: #ef233c;
+    border: 1px solid #ef233c;
 }
 
 .two {
@@ -219,7 +220,7 @@ margin-top: 10px;
 .RM {
     width: 180px;
     height: 50px;
-    background-color: red;
+    background-color: #ef233c;
     color: beige;
     border: none;
     border-radius: 7px;
@@ -228,6 +229,165 @@ margin-top: 10px;
 
 .RM:hover {
     background-color: beige;
-    color: red;
-    border: 1px solid red;
+    color: #ef233c;
+    border: 1px solid #ef233c;
+}
+
+
+/* desktop view  */
+@media screen  and (max-width: 1200px) {
+   .main{
+    grid-template-columns: 1fr 1fr   ; 
+   }
+} 
+
+ /* tablet view  */
+@media screen  and (max-width: 768px) {
+   .main{
+    grid-template-columns: 1fr 1fr  ; 
+   }
+} 
+
+/* mobile view  */
+@media screen and (max-width: 320px) {
+    .main{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* freelancer wala div  */
+
+
+.full {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-top: 70px;
+}
+ 
+
+.baya {
+    padding-left: 80px;
+    /* gap: 20px; */
+}
+
+.baya img {
+    background-color: #00253e;
+   
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    
+}
+
+.baya img:hover {
+    background-color: #1CBBB4;
+}
+
+ .baya h1{
+    font-weight: bolder;
+}
+
+.baya p1{
+    color: #ef233c;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+.baya p2{
+    color: #00253e;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.divA {
+    display: flex;
+    margin-top: 40px;   
+}
+ 
+
+.divB {
+    display: flex;
+    margin-top: 20px;
+}
+
+.divC {
+    display: flex;
+    margin-top: 20px;
+}
+
+.divD {
+    display: flex;
+    margin-top: 20px;
+}
+
+.daya img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 100%;
+}
+
+.ek {
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+
+/* next div  */
+
+
+.testimonial {
+    margin-top: 100px;
+}
+.testimonial h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #00253e;
+}
+
+.explain {
+    margin-top: 50px;
+    width: 800px;
+    height: 200px;
+    background-color: #e9ecef;
+    margin-left: 225px;
+    text-align: center;
+    padding: 50px;
+     box-shadow: 10px 5px 5px #00253e;
+}
+
+.explain:hover {
+    border: 1px solid #00253e;
+}
+
+.explain h2{
+font-size: 1.7rem;
+font-weight: bolder;
+color: #00253e;
+}
+
+
+.explain p{
+    color: #00253e;
+    font-weight: 400px;
+}
+
+.fa-quote-left {
+  font-size: xx-large;
+  color: #00253e;
+     
+}
+
+/* footer  */
+
+.footer {
+    background-color: #00253e;
+    height: 500px;
+    width: 100%;
+    margin-top: 120px;
 }
