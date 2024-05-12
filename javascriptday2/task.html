@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<button onclick="alight()">Turn on the Light</button>
+
+<img id="hi" src="../javascriptday2/bulb-off.jpg" style="width:350px">
+
+<button onclick="blight()">Turn off the Light</button>
+ 
+<script>
+
+function alight()
+{
+    document.getElementById("hi").src = '../javascriptday2/bulb-on.jpg' ;     
+}
+
+function blight()
+{
+    document.getElementById("hi").src = "../javascriptday2/bulb-off.jpg" ;
+}
+
+
+
+</script>
+
+</body>
+</html>
