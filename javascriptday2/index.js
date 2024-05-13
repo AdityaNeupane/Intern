@@ -111,3 +111,56 @@ console.log(ek / dui);
 console.log(ek === dui ? "yes" : "no");
 
 console.log(ek == dui ? "yes" : "no");
+
+// ..................
+
+var patient =
+{
+    firstname: "ram",
+    middlename: "bahadur",
+    lastname: "shrestha",
+    age: 65,
+    disease: "cancer",
+    address: "bharatpur",
+    gender: "male",
+    country: "Nepal",
+
+    fulldescription : function()
+    {
+        return this.firstname + " " + this.middlename + " " + this.lastname + " " + this.age + " " + this.disease + " " + this.address + " " + this.gender + " " + this.country; 
+    },
+};
+
+console.log(patient.fulldescription());
+
+// ***************
+
+// fulldetail : function()
+// {
+// return this.firstname + " " + this.middlename + " " + this.lastname + " " + this.age + " " + this.disease + " " + this.address + " " + this.country + " " + this.gender;
+
+// },
+
+// console.log(patient.fulldetail());
+
+// **********************
+
+var patient = 
+{ 
+    firstname: "jack ",
+     middlename: "kumar",
+     lastname: "diesel",
+     age: 35,
+     gender: "male",
+     disease: "aids",
+     address: "sydney",
+     country: "australia",
+
+   fulldescription : function()
+   {
+    return this.firstname + " " + this.middlename + " " + this.lastname + " " + this.age + " " + this.gender + " " + this.disease + " " + this.address + " " + this.country;
+   },
+
+};
+
+console.log(patient.fulldescription());
