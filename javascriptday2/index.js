@@ -68,3 +68,46 @@ console.log(typeof fullname);
 
 
 console.log(bookprice === microprocessor ? "yes" : "no" );
+
+
+// ...........................
+
+var hello ="boAthead";
+var hiiii ="boAthead";
+
+console.log(hello == hiiii);
+console.log(hello == hiiii ? "yes" : "no" );
+console.log(hello.length);
+console.log(typeof hello);
+console.log(typeof hiiii);
+
+
+// ...................
+
+var ek = "5071";
+var dui = 5071;
+
+console.log(typeof ek);
+console.log(typeof dui);
+
+console.log(ek.length);
+
+console.log(ek == dui);
+console.log(ek === dui);
+
+
+
+var full = ek + dui;
+
+console.log(typeof full);
+
+console.log(full);
+
+console.log(ek-dui);
+console.log(ek * dui);
+console.log(ek / dui);
+ 
+
+console.log(ek === dui ? "yes" : "no");
+
+console.log(ek == dui ? "yes" : "no");
