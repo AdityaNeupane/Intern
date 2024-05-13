@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+
+    <h2>hello there!!</h2>
+
+      <button onclick="data()"> click here to display date and time</button> 
+
+       <!-- also we can simply write !! <button type= "button" onclick="document.getElementById('time').innerHTML = Date()"> click here to display date and time </button> !! for faster and easier option ani yo garesi script tag ni banauna pardaina but aile beginning phase ma button tag mai halda confusing huncha bhanera script tag ma deko , thankyou !  -->
+
+      <p id="time"></p>
+       
+      <script>
+        function data()
+        {
+          document.getElementById("time").innerHTML = Date();
+        }
+      </script>
+
+<br>
+
+<h2> good morning !!!</h2>
+<p id="hi">My name is Aditya Neupane. I am 22 years old. I live in Bharatpur-9 , Chitwan.</p>
+
+<button onclick="hello()"> click here to change the font size of paragraph.</button>
+
+<script>
+    function hello()
+    {
+        document.getElementById("hi").style.fontSize = "40px";
+    }
+</script>
+
+<br><br>
+
+<h2>hellooooooo !!!!</h2>
+<p id="one">Lorem ipsum, dolor sit amet m iure porro, velit placeat repellat consequuntur libero similique incidunt reprehen ucimus quis dolores minima.</p>
+<button onclick="two()"> click here to hide the above line</button>
+<script>
+    function two()
+    {
+        document.getElementById("one").style.display = "none";
+    }
+</script>
+</body>
+</html>
+
+<br><br>
+
+<h2> new day !!!!</h2>
+<p>let's learn something new</p>
+<p id="three" style="display:none"> tadaaaaaaa !!!!</p>
+<button onclick="four()"> click here for the surprise</button>
+
+<script>
+    function four()
+    {
+        document.getElementById('three').style.display = 'block';
+    }
+</script>
+
+<br><br>
+
+<!-- window alert function i.e output is shown in alert box  -->
+
+<h2>good evening !!</h2>
+<p>this is an javascript function named window dot alert where the output is displayed in alert box at the top</p>
+<button>  click and watch alert box </button>
+<script>
+    window.alert("welcome to my javascript practice tasks - Aditya neupane");
+</script>
+
+<br><br>
+
+<h2>nice day boi !!!!</h2>
+<p>have a good one</p>
+<p> wonderful person </p>
+
+<button onclick="six()"> click here to print this whole page </button>
+
+<!-- or we can simply write <button onclick="window.print()">click here</button> directly nai for easier/faster option but rightnow we are in the beginning phase so confusion nahos bhanera script tag diyera function banako, thankyou! -->
+<script>
+
+    function six()
+    {
+        window.print();
+    }
+</script>
+
+<br><br>
+
