@@ -12,6 +12,9 @@
 
     <p id="demo"></p>
 
+    <p id="hello"></p>
+    <p id="dear"></p>
+
     <script>
         try {
          carname = "volvo";
@@ -21,8 +24,31 @@
             document.getElementById("demo").innerHTML = err;
         }
     </script>
+     <br<br><br>
 
+     <script>
+        // creating an array 
+        const cars = [" hyundai ", " kia ", " tata ", " yatri "];
+         
+        // replacing an element in array
+        cars[1] = " mahindra ";   
+        cars[0] = " suzuki ";   
+        
+        // add an  element in array 
+        cars.push(" audi ");
+        cars.push(" mercedes ");
+        
+        // declaring or printing an array 
+       document.getElementById("hello").innerHTML = cars;
 
+     </script>
+
+     <script>
+        const vechile = {type:"sedan", model:"2012", color:"blue"};
+
+        vechile.owner = "Aditya";
+        document.getElementById("dear").innerHTML = " the owner of this car is " + vechile.owner;
+     </script>
 
 
 
