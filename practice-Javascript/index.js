@@ -102,19 +102,19 @@ abc(9);
 // function use garera grade find out gareko 
 
 const grade = (marks) => {
-    if(90<marks<100) {
+    if(marks>=90) {
         console.log("your grade is A+");
     }
-    if(80<marks<90) {
+    else if(marks>=80) {
         console.log("your grade is A");
     }
-    if(70<marks<80) {
+    else if(marks>=70) {
         console.log("your grade is B");
     }
-    if(60<marks<70) {
+    else if(marks>=60) {
         console.log("your grade is C");
     }
-    if(50<marks<60) {
+    else if(marks>=50) {
         console.log("your grade is D");
     }
      else {
@@ -122,7 +122,7 @@ const grade = (marks) => {
      }
 };
 
-grade(95);
+grade(35);
 
 
 // finding eligibility for driving license using function 
