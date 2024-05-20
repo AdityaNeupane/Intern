@@ -12,13 +12,15 @@ fetch("https://dummyjson.com/recipes")
     recipes.forEach((recipe) => {
       
         rows += ` 
-        <div class="card" style="height : 50%; width : 50%" >
+        <div class="card">
 
-        <img style="height : 200px; width : 200px; object-fit : cover;" src="${recipe.image}">
+        <div class="photo">
+        <img style="height : 200px; width : 200px; object-fit : contain;" src="${recipe.image}">
+          </div>
 
-        <div class="card-body">
+        <div class="box">
         
-        <h5> <u>${recipe.name}</u></h5>
+        <div class="name"><h5> <u>${recipe.name}</u></h5></div>
         <br>
          <p><strong>Ingredients:</strong> ${recipe.ingredients.join(' , ')}</p>
          <p><strong>Instructions:</strong> ${recipe.instructions.join(' , ')}</p>
