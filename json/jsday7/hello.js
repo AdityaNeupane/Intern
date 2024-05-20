@@ -1,21 +1,32 @@
 fetch("https://dummyjson.com/products")
-.then(res=>{
+.then((res) =>{
     return res.json();
 })
 
-.then(data=>{
-    console.log(data);
-    const newdata = data;
+.then((data) =>{
+    console.log(data.products);
+    const newdata = data.products;
      
     let rows = "";
 
-    newdata.forEach(product => {
+    newdata.forEach((product) => {
 
-     rows+=`<tr> <td>${product.id}</td> <td>${product.title}</td> <td>${product.description}</td> <td>${product.price}</td> <td>${product.rating}</td> <td>${product.stock}</td> <td>${product.brand}</td> <td>${product.category}</td> <td><img style"width:100px ; height:100px;" src=${product.images}</td> </tr>`;
+    rows += `<tr>
+    <td>${product.id}</td>
+    <td>${product.title}</td>
+    <td>${product.description}</td>
+    <td>${product.price}</td>
+    <td>${product.rating}</td>
+    <td>${product.stock}</td>
+    <td>${product.brand}</td>
+    <td>${product.category}</td>
+    <td><img style="width: 200px ; height: 200px;" src="${product.images[0]}"</td>
+    </tr>`  
+
 
     });
 
-    document.getElementById("dynamicdata").innerHTML = rows;
+    document.querySelector(".dynamicdata").innerHTML = rows;
 
 })
-.catch((err) => console.log(err));
+.catch(err=>console.log(err))
