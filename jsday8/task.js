@@ -18,7 +18,8 @@ fetch("https://dummyjson.com/recipes")
 
         <div class="card-body">
         
-        <p><strong>Name:</strong> ${recipe.name}</p>
+        <h5> <u>${recipe.name}</u></h5>
+        <br>
          <p><strong>Ingredients:</strong> ${recipe.ingredients.join(' , ')}</p>
          <p><strong>Instructions:</strong> ${recipe.instructions.join(' , ')}</p>
          <p><strong>PrepTimeMinutes:</strong> ${recipe.prepTimeMinutes} miunutes</p>
