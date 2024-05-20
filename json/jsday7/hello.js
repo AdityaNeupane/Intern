@@ -20,13 +20,15 @@ fetch("https://dummyjson.com/products")
     <td>${product.stock}</td>
     <td>${product.brand}</td>
     <td>${product.category}</td>
-    <td><img style="width: 200px ; height: 200px;" src="${product.images[0]}"</td>
+    <td><img style="width: 150px ; height: 150px;" src="${product.images[0]}"</td>
     </tr>`  
 
 
     });
 
-    document.querySelector(".dynamicdata").innerHTML = rows;
+    document.getElementById("dynamicdata").innerHTML = rows;
 
 })
 .catch(err=>console.log(err))
+
+
