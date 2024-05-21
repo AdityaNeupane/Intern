@@ -15,12 +15,12 @@ fetch("https://dummyjson.com/recipes")
         <div class="card">
 
         <div class="photo">
-        <img style="height : 200px; width : 200px; object-fit : contain;" src="${recipe.image}">
+        <img style="height : 300px; width : 300px;" src="${recipe.image}">
           </div>
 
         <div class="box">
         
-        <div class="name"><h5> <u>${recipe.name}</u></h5></div>
+        <div class="name"><h5 style="font-family:'Lobster', cursive; font-size:1.5rem;"> <u>${recipe.name}</u></h5></div>
         <br>
          <p><strong>Ingredients:</strong> ${recipe.ingredients.join(' , ')}</p>
          <p><strong>Instructions:</strong> ${recipe.instructions.join(' , ')}</p>

@@ -5,6 +5,8 @@
 .topbar {
     background-color: #fdfffc;
     display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
 }
 .topbar img{
     height: 180px;
@@ -15,12 +17,15 @@
 }
 
 .rep {
-    font-family: 'sans-serif';
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
     font-weight: bold;
-    padding: 50px;
+    /* padding: 20px; */
     color: #004052;
-    padding-left: 80px;
-    padding-top: 60px;
+    /* padding-left: 80px; */
+    /* padding-top: 60px; */
+    text-align: center;
+    margin: 0 auto;
 }
 
 
@@ -46,12 +51,12 @@
 }
 
 .photo {
-    padding-top: 25px;
-    padding-left: 70px;    
-    padding-bottom: 25px;
+     padding: 25px;
+     text-align: center;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #fdfffc;
+    object-fit: contain;
     
 }
 
@@ -83,3 +88,99 @@ p{
     padding: 10px;
      text-align: center
  }
+
+
+
+
+ /* for responsiveness  */
+
+
+ /* large laptops or desktops with min width of 1200 px  */
+
+@media (min-width: 1200px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+     .topbar {
+        padding: 20px 50px;
+    }
+
+    .rep {
+        font-size: 2rem;
+    }
+
+    .footer {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* for tablet or smaller laptop view  */
+
+ @media (max-width: 1200px) {
+    .container {
+        grid-template-columns: 1fr  1fr;
+    }
+     
+    .photo img {
+        padding-right: 20px;
+    }
+
+    .rep {
+        padding: 0;
+        align-items:start;
+    }
+}
+
+/* for mobile or slightly bigger mobile view  */
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr ;
+    }
+
+    .topbar {
+        flex-direction: column;
+        text-align: center;
+    }
+     
+    .topbar img {
+        margin-bottom: 20px;
+    }
+    .rep {
+        padding: 0;
+    }
+     
+     
+}
+
+/* for extra small devices */
+
+@media (max-width: 576px) {
+    .topbar img {
+        height: 120px;
+        width: 160px;
+    }
+
+    .card {
+        padding-right: 10px;
+        margin-right: 10px;
+    }
+
+    .photo {
+        height: 350px;
+        width: 80px;
+        padding-left: 2px;
+        /* padding-right: 10px; */
+        /* margin-right: 20px; */
+        /* padding-right: 0px; */
+        background-repeat: no-repeat;
+        background-size: contain;
+        
+        /* text-align: center; */
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+}
