@@ -1,0 +1,157 @@
+  {
+  "cars": [
+    {
+      "id": 1,
+      "name": "Model S",
+      "brand": "Tesla",
+      "modelYear": 2021,
+      "price": 79999,
+      "range": "396 miles",
+      "seatCapacity": 5,
+      "fuelType": "Electric",
+      "features": ["Autopilot", "Full Self-Driving", "Ludicrous Mode"],
+      "dealer": {
+        "name": "Tesla Dealership",
+        "address": "3500 Deer Creek Road, Palo Alto, CA",
+        "phoneNumber": "123-456-7890"
+      },
+      "image":  "./images/tesla-modelS.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Mustang",
+      "brand": "Ford",
+      "modelYear": 2022,
+      "price": 55999,
+      "range": "300 miles",
+      "seatCapacity": 4,
+      "fuelType": "Gasoline",
+      "features": ["Turbocharged", "Rear-Wheel Drive", "Apple CarPlay"],
+      "dealer": {
+        "name": "Ford Dealership",
+        "address": "1 American Road, Dearborn, MI",
+        "phoneNumber": "234-567-8901"
+      },
+      "image": "./images/ford-mustang.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Civic",
+      "brand": "Honda",
+      "modelYear": 2021,
+      "price": 24999,
+      "range": "450 miles",
+      "seatCapacity": 5,
+      "fuelType": "Gasoline",
+      "features": ["Eco Assist", "Lane Keeping Assist", "Bluetooth"],
+      "dealer": {
+        "name": "Honda Dealership",
+        "address": "1919 Torrance Blvd, Torrance, CA",
+        "phoneNumber": "345-678-9012"
+      },
+      "image": "./images/honda-civic.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Camry",
+      "brand": "Toyota",
+      "modelYear": 2021,
+      "price": 27999,
+      "range": "450 miles",
+      "seatCapacity": 5,
+      "fuelType": "Gasoline",
+      "features": ["Adaptive Cruise Control", "Wi-Fi Hotspot", "Apple CarPlay"],
+      "dealer": {
+        "name": "Toyota Dealership",
+        "address": "6565 Headquarters Dr, Plano, TX",
+        "phoneNumber": "456-789-0123"
+      },
+      "image":  "./images/toyota-camry.jpg"
+    },
+    {
+      "id": 5,
+      "name": "3 Series",
+      "brand": "BMW",
+      "modelYear": 2021,
+      "price": 41999,
+      "range": "350 miles",
+      "seatCapacity": 5,
+      "fuelType": "Gasoline",
+      "features": ["All-Wheel Drive", "Gesture Control", "Harman Kardon Sound"],
+      "dealer": {
+        "name": "BMW Dealership",
+        "address": "300 Chestnut Ridge Rd, Woodcliff Lake, NJ",
+        "phoneNumber": "567-890-1234"
+      },
+      "image":  "./images/bmw-3series.jpg" 
+    },
+    {
+      "id": 6,
+      "name": "A4",
+      "brand": "Audi",
+      "modelYear": 2021,
+      "price": 39999,
+      "range": "370 miles",
+      "seatCapacity": 5,
+      "fuelType": "Gasoline",
+      "features": ["Quattro All-Wheel Drive", "Virtual Cockpit", "Bang & Olufsen Sound"],
+      "dealer": {
+        "name": "Audi Dealership",
+        "address": "2200 Ferdinand Porsche Dr, Herndon, VA",
+        "phoneNumber": "678-901-2345"
+      },
+      "image":  "./images/audi-a4.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Model X",
+      "brand": "Tesla",
+      "modelYear": 2021,
+      "price": 89999,
+      "range": "340 miles",
+      "seatCapacity": 7,
+      "fuelType": "Electric",
+      "features": ["Autopilot", "Full Self-Driving", "Falcon Wing Doors"],
+      "dealer": {
+        "name": "Tesla Dealership",
+        "address": "3500 Deer Creek Road, Palo Alto, CA",
+        "phoneNumber": "789-012-3456"
+      },
+      "image":  "./images/tesla-modelX.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Corvette",
+      "brand": "Chevrolet",
+      "modelYear": 2021,
+      "price": 69999,
+      "range": "360 miles",
+      "seatCapacity": 2,
+      "fuelType": "Gasoline",
+      "features": ["Mid-Engine Design", "Performance Data Recorder", "Bose Sound System"],
+      "dealer": {
+        "name": "Chevrolet Dealership",
+        "address": "100 Renaissance Center, Detroit, MI",
+        "phoneNumber": "890-123-4567"
+      },
+      "image":  "./images/chevrolet-corvette.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Altima",
+      "brand": "Nissan",
+      "modelYear": 2021,
+      "price": 24999,
+      "range": "400 miles",
+      "seatCapacity": 5,
+      "fuelType": "Gasoline",
+      "features": ["ProPILOT Assist", "All-Wheel Drive", "Remote Engine Start"],
+      "dealer": {
+        "name": "Nissan Dealership",
+        "address": "1 Nissan Way, Franklin, TN",
+        "phoneNumber": "901-234-5678"
+      },
+      "image":  "./images/nissan-altima.jpg"
+    }
+  ]
+}
