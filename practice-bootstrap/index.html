@@ -1382,6 +1382,7 @@ document.getElementById("toastbtn").onclick = function() {
     <div class="w-70 bg-success">width 70%</div>
     <div class="w-50 bg-success">width 50%</div>
     <br>
+    <!-- Set the height of an element with the h-* classes (.h-25, .h-50, .h-75, .h-100, .h-auto, and .mh-100): -->
     <div style="height:200px; background-color: #ddd">
     <div class="h-25 d-inline-block p-2 bg-warning">height 25%</div>
     <div class="h-50 d-inline-block p-2 bg-warning">height 50%</div>
@@ -1393,8 +1394,146 @@ document.getElementById("toastbtn").onclick = function() {
 <br><br><br>
 
 <div class="container mt-3 p-3 border">
+    <h2>spacing utilities</h2>
+    <div class="pt-4 bg-primary">padding-top: 4</div>
+    <div class="mt-4 bg-success">margin-top: 4</div>
+    <div class="mb-4 p-3 bg-warning">margin-bottom: 4 and padding: 3</div>
+</div>
+
+<br><br><br>
+
+<h2>shadows</h2>
+<div class="container mt-3 p-3 border">
+    <div class="shadow bg-light p-3 mb-3">shadow</div>
+    <div class="shadow-none bg-light p-3 mb-3">shadow-none</div>
+    <div class="shadow-sm p-3 mb-3 bg-light">shadow-sm</div>
+    <div class="shadow-lg p-3 mb-3 bg-light">shadow-lg</div>
+</div>
+
+<br><br><br>
+
+<div class="container mt-3 p-3 border">
+    <h2>aspect ratio 1:1</h2>
+    <div class="ratio ratio-1x1">
+         <iframe   src="https://www.youtube.com/embed/vrH7CT0eexw?si=1r8aAchHKcthZJft" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  ></iframe>
+    </div>
+<br>
+    <h2>aspect ratio 16:9</h2>
+    <div class="ratio ratio-16x9">
+        <iframe   src="https://www.youtube.com/embed/vrH7CT0eexw?si=1r8aAchHKcthZJft" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  ></iframe>
+    </div>
+<br>
+    <h2>aspect ratio 4:3</h2>
+    <div class="ratio ratio-4x3">
+        <iframe   src="https://www.youtube.com/embed/vrH7CT0eexw?si=1r8aAchHKcthZJft" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  ></iframe>
+    </div>
 
 </div>
+
+<br><br><br>
+
+<!-- To create a flexbox container and to transform direct children into flex items, use the d-flex class: -->
+    <div class="d-flex p-3 bg-secondary text-white">
+     <div class="p-2 bg-info">flex 1</div>
+     <div class="p-2 bg-warning">flex 2</div>
+     <div class="p-2 bg-danger">flex 3</div>
+    </div>
+
+    <br><br><br>
+
+    <!-- To create an inline flexbox container, use the d-inline-flex class: -->
+    <div class="d-inline-flex p-3 bg-secondary text-white">
+        <div class="p-2 bg-info">flex 1</div>
+        <div class="p-2 bg-warning">flex 2</div>
+        <div class="p-2 bg-success">flex 3</div>
+    </div>
+
+    <br><br><br>
+
+    <!-- Use .flex-row to display the flex items horizontally (side by side). This is default. -->
+        <div class="d-flex flex-row bg-secondary">
+            <div class="bg-primary p-2">flex item 1</div>
+            <div class="bg-warning p-2">flex item 2</div>
+            <div class="bg-success p-2">flex item 3</div>
+        </div>
+     
+        <br><br><br>
+
+        <!-- Use .flex-row-reverse to right-align the horizontal direction: -->
+        <div class="d-flex flex-row-reverse bg-secondary">
+            <div class="bg-primary p-2">flex item 1</div>
+            <div class="bg-warning p-2">flex item 2</div>
+            <div class="bg-success p-2">flex item 3</div>
+        </div>
+
+<br><br><br>
+
+<!-- Use .flex-column to display the flex items vertically (on top of each other), or .flex-column-reverse to reverse the vertical direction: -->
+
+<div class="d-flex flex-column">
+    <div class="bg-primary p-2">flex item 1</div>
+    <div class="bg-warning p-2">flex item 2</div>
+    <div class="bg-success p-2">flex item 3</div>
+</div>
+
+<br><br>
+
+<div class="d-flex flex-column-reverse">
+    <div class="bg-primary p-2">flex item 1</div>
+    <div class="bg-warning p-2">flex item 2</div>
+    <div class="bg-success p-2">flex item 3</div>
+</div>
+
+<br><br><br>
+
+<!-- Use the .justify-content-* classes to change the alignment of flex items. Valid classes are start (default), end, center, between or around: -->
+<div class="d-flex bg-secondary mb-3 justify-content-center">
+    <div class="p-2 bg-primary">flex item 1</div>
+    <div class="p-2 bg-warning">flex item 2</div>
+    <div class="p-2 bg-success">flex item 3</div>
+</div>
+
+<div class="d-flex bg-secondary mb-3 justify-content-end">
+    <div class="p-2 bg-primary">flex item 1</div>
+    <div class="p-2 bg-warning">flex item 2</div>
+    <div class="p-2 bg-success">flex item 3</div>
+</div>
+
+<div class="d-flex bg-secondary mb-3 justify-content-between">
+    <div class="p-2 bg-primary">flex item 1</div>
+    <div class="p-2 bg-warning">flex item 2</div>
+    <div class="p-2 bg-success">flex item 3</div>   
+</div>
+
+<div class="d-flex bg-secondary mb-3 justify-content-around">
+    <div class="p-2 bg-primary">flex item 1</div>
+    <div class="p-2 bg-warning">flex item 2</div>
+    <div class="p-2 bg-success">flex item 3</div>
+</div>
+
+<br><br><br>
+
+<!-- Use .flex-fill on flex items to force them into equal widths: -->
+<div class="d-flex">
+    <div class="p-2 bg-primary flex-fill">flex item 1</div>
+    <div class="p-2 bg-warning flex-fill">flex item 2</div>
+    <div class="p-2 bg-success flex-fill">flex item 3</div>
+</div>
+
+<br><br><br>
+
+<!-- Use .flex-grow-1 on a flex item to take up the rest of the space. In the example below, the first two flex items take up their necessary space, while the last item takes up the rest of the available space: -->
+<div class="d-flex">
+    <div class="p-2 bg-primary ">flex item 1</div> 
+    <div class="p-2 bg-warning ">flex item 2</div>
+    <div class="p-2 bg-success flex-grow-1 ">flex item 3</div>
+</div>
+
+<br><br><br>
+
+
+
+
 
 
 
