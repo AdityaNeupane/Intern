@@ -1,0 +1,7 @@
+span {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 6px;
+    background-color:#f9f9f9;
+}

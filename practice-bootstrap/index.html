@@ -10,6 +10,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+<link rel="stylesheet" href="index.css">
  
 
 
@@ -1209,7 +1210,192 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 
 <br><br><br>
 
+<!-- A toast is like an alert box that is only shown for a couple of seconds when something happens (i.e. when a user clicks on a button, submits a form, etc.). -->
+
+ 
+
+<h2>toast</h2>
+<button type="button" class="btn btn-primary" id="toastbtn">click here</button>
+
+<div class="toast">
+
+    <div class="toast-header">
+        <strong class="me-auto">Bootstrap</strong>
+        <small>11 mins ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+
+    <div class="toast-body">
+        Hello, world! This is a toast message.
+    </div>
+
+</div>
+ 
+
+<script>
+document.getElementById("toastbtn").onclick = function() {
+  var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+  var toastList = toastElList.map(function(toastEl) {
+    return new bootstrap.Toast(toastEl)
+  })
+  toastList.forEach(toast => toast.show()) 
+}
+</script>
+ 
+
+<br><br><br>
+
+<!-- Scrollspy is used to automatically update links in a navigation list based on scroll position.
+
+
+<style>
+    body {
+        position:relative;
+    }
+</style>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
 <div class="container mt-3 p-3 border">
+   <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top"> 
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="section1">link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="section2">link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="section3">link 3</a>
+            </li>
+        </ul>
+    </div>
+   </nav>
+
+<div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+    <h2>section1</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse neque sint explicabo atque cumque sed itaque, dolorum doloribus aspernatur corporis commodi accusantium asperiores id inventore, placeat perferendis eum sunt dolore!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consequuntur quae eum dolor! Obcaecati labore vel ullam enim facere quo. Quas dolor, error minus non incidunt voluptas placeat deserunt quam!</p>
+</div>
+
+<div id="section2" class="container-fluid bg-warning text-white" style="padding:100px 20px;">
+    <h2>section2</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci id tempore voluptatum fuga quidem nam neque laborum eos. Maiores iure neque dolorem. Rem cum voluptates iusto architecto voluptatibus rerum veniam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit incidunt explicabo numquam. Autem cupiditate esse, corporis deleniti accusamus ea, voluptate impedit sequi illum doloremque quos perspiciatis vitae? Sit, aliquam quo?</p>
+</div>
+
+<div id="section3" class="container-fluid bg-danger text-white" style="padding:100px 20px;">
+    <h2>section3</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate voluptatem optio commodi minima? Minus alias voluptatem, molestias explicabo ab cupiditate vero excepturi facilis vel quae tenetur modi ipsa expedita suscipit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, vel. Ad architecto nobis velit tempore iure odit reiciendis, illum voluptates iste in, quidem inventore ea! Necessitatibus quo recusandae ipsam repellat?</p>
+</div>
+</div> -->
+
+<br>
+
+<!-- Offcanvas is similar to modals (hidden by default and shown when activated), except that is often used as a sidebar navigation menu. -->
+
+<div class="container mt-3 p-3 border">
+
+<div class="offcanvas offcanvas-start" id="demo">
+    <div class="offcanvas-header">
+        <h1 class="offcanvas-title">aditya</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <button class="btn btn-primary" data-bs-dismiss="offcanvas">close</button>
+    </div>
+</div>
+
+<div class="container-fluid mt-3">
+    <h1>offcanvas sidebar</h1>
+    <p>click the button to open the offcanvas</p>
+    <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#demo">open</button>
+</div>
+</div>
+
+<br><br>
+
+<!-- Use .border-1 to .border-5 to change the width of the border: -->
+<!-- also you can use border colors  -->
+<div class="container mt-3 p-3 border" >
+    <h2>border width</h2>
+    <span class="border border-1"></span>
+    <span class="border border-2"></span>
+    <span class="border border-3"></span>
+    <span class="border border-4"></span>
+    <span class="border border-primary"></span>
+    <span class="border border-success"></span>
+    <span class="border border-warning"></span>
+</div>
+
+<br><br><br>
+
+<div class="container mt-3 p-3 border">
+<span class="rounded" style="background-color: aqua;"></span>
+<span class="rounded-top" style="background-color: aqua;"></span>
+<span class="rounded-bottom" style="background-color: aqua;"></span>
+<span class="rounded-start" style="background-color: aqua;"></span>
+<span class="rounded-end" style="background-color: aqua;"></span>
+<span class="rounded-pill" style="background-color: aqua; width:160px;"></span>
+<span class="rounded-circle" style="background-color: aqua;"></span>
+<span class="rounded-0" style="background-color: blue;"></span>
+<span class="rounded-3" style="background-color: yellow;"></span>
+<span class="rounded-5" style="background-color: red;"></span>
+ 
+</div>
+
+<br><br><br>
+
+<div class="container mt-3 p-3 border">
+    <h2>float</h2>
+    <div class="clearfix">
+    <span class="float-start">float start</span>
+    <span class="float-end">float end</span>
+    <br>
+    <button class="btn btn-primary float-end">float end</button>
+    <button class="btn btn-primary float-start">float start</button>
+    </div>
+</div>
+
+<br><br><br>
+
+
+<div class="container mt-3 p-3 border">
+    <h1>responsiveness floats</h1>
+    <div class="float-sm-end">float right on small screen</div><br>
+    <div class="float-lg-end">float right on large screen</div><br>
+    <div class="float-sm-start">float left on small screen</div><br>
+    <div class="float-lg-start">float left on large screen</div>
+</div>
+
+<br><br><br>
+
+<h2>centering content using mx-auto</h2>
+<div class="container mt-3 p-3 border">
+    <div class="mx-auto bg-primary" style="width:100px">center</div>
+    <br>
+    <!-- Set the width of an element with the w-* classes (.w-25, .w-50, .w-75, .w-100, .w-auto, and .mw-100): -->
+    <div class="w-25 bg-success">width 25%</div>
+    <div class="w-70 bg-success">width 70%</div>
+    <div class="w-50 bg-success">width 50%</div>
+    <br>
+    <div style="height:200px; background-color: #ddd">
+    <div class="h-25 d-inline-block p-2 bg-warning">height 25%</div>
+    <div class="h-50 d-inline-block p-2 bg-warning">height 50%</div>
+    <div class="h-100 d-inline-block p-2 bg-warning">height 100%</div>
+    <div class="h-75 d-inline-block p-2 bg-warning">height 75%</div>
+    </div>
+</div>
+
+<br><br><br>
+
+<div class="container mt-3 p-3 border">
+
+</div>
+
 
 
 </body>
